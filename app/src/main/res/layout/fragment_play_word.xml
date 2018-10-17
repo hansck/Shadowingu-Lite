@@ -48,7 +48,6 @@
 				android:layout_below="@id/kanjiContainer"
 				android:layout_centerInParent="true"
 				android:layout_marginStart="@dimen/item_margin_small"
-				android:layout_marginLeft="@dimen/item_margin_small"
 				android:layout_marginTop="@dimen/item_margin_small"
 				android:background="@android:color/transparent"
 				android:src="@drawable/ic_microphone" />

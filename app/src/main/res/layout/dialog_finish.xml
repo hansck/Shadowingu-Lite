@@ -49,7 +49,6 @@
 			android:id="@+id/btnReplay"
 			android:layout_width="@dimen/avatar_small"
 			android:layout_height="@dimen/avatar_small"
-			android:layout_marginLeft="@dimen/item_margin_normal"
 			android:layout_marginStart="@dimen/item_margin_normal"
 			android:background="@drawable/ic_replay" />
 	</LinearLayout>
