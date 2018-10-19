@@ -12,7 +12,8 @@
 		style="@style/Word"
 		android:layout_width="wrap_content"
 		android:gravity="center"
-		android:text="@string/finish" />
+		android:text="@string/finish"
+		android:textColor="@color/color_primary" />
 
 	<LinearLayout
 		android:id="@+id/resultContainer"

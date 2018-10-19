@@ -10,9 +10,16 @@
 	<string name="finish">Lesson Cleared!</string>
 	<string name="finish_result_title">You can choose another lesson or repeat this one.</string>
 	<string name="next">Next</string>
-	<string name="guide_word">This is the word you will learn.</string>
-	<string name="guide_voice">Press Voice button to hear how a word is spoken correctly.</string>
-	<string name="guide_hint">Press Show Hint to see word in hiragana, romaji, and its meaning.</string>
-	<string name="guide_recording">Press and hold the Recording button to record your voice.></string>
-	<string name="guide_next">Press Next to learn the next word.</string>
+	<string name="guide_word">This is the word you will learn</string>
+	<string name="guide_voice">Press Voice button to hear how a word is spoken correctly</string>
+	<string name="guide_hint">Press Show Hint to see word in hiragana, romaji, and its meaning</string>
+	<string name="guide_recording">Press and hold the Recording button to record your voice</string>
+	<string name="guide_next">Press Next to learn the next word</string>
+	<string name="intro_shadowing">Shadowing</string>
+	<string name="intro_desc">A technique to learn new vocabularies, listening, and speaking of foreign language</string>
+	<string name="intro_how_to_do">How To Do It</string>
+	<string name="intro_step_hear">Hear how a word is spoken correctly</string>
+	<string name="intro_step_speak">Repeating as close as possible to what you have heared</string>
+	<string name="intro_step_repeat">See the description / transcript if you don\'t get it correct and repeat again</string>
+	<string name="start_learning">Start Learning!</string>
 </resources>
