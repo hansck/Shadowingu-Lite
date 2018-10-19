@@ -1,6 +1,7 @@
 package com.hansck.shadowingulite.screen.playword
 
 import android.os.Bundle
+import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
@@ -63,7 +64,10 @@ class PlayWordFragment : BaseFragment(), PlayWordPresenter.PlayWordView {
 		romaji.text = word.romaji
 		meaning.text = word.meaning
 		btnVoice.setOnClickListener {
-			Common.instance.playAudio(activity!!, word.audio)
+			playAudio()
+		}
+		voiceContainer.setOnClickListener {
+			playAudio()
 		}
 		btnHint.setOnClickListener {
 			presenter.presentState(WRONG_ANSWER)
@@ -82,6 +86,10 @@ class PlayWordFragment : BaseFragment(), PlayWordPresenter.PlayWordView {
 					buildGuide(btnHint, "Hint", resources.getString(R.string.guide_hint)),
 					buildGuide(btnNext, "Next", resources.getString(R.string.guide_next)))
 			showGuide()
+		} else {
+			Handler().postDelayed({
+				playAudio()
+			}, 500)
 		}
 	}
 
@@ -90,6 +98,7 @@ class PlayWordFragment : BaseFragment(), PlayWordPresenter.PlayWordView {
 			guides[guideIdx].show()
 		} else {
 			PersistentManager.instance.setShowGuide()
+			playAudio()
 		}
 	}
 
@@ -105,4 +114,9 @@ class PlayWordFragment : BaseFragment(), PlayWordPresenter.PlayWordView {
 				}
 				.build()
 	}
+
+	private fun playAudio() {
+		Common.instance.playAudio(activity!!, doRetrieveModel().word.audio)
+	}
+
 }
