@@ -55,12 +55,8 @@ class HomePresenterImpl(val view: HomePresenter.HomeView) : HomePresenter, Query
 	}
 
 	override fun onQuerySucceed(route: QueryEnum) {
-		if (route == QueryEnum.GET_BADGES) {
-			presentState(SHOW_ITEMS)
-		}
 	}
 
 	override fun onQueryFailed(route: QueryEnum, throwable: Throwable) {
-		presentState(ERROR)
 	}
 }

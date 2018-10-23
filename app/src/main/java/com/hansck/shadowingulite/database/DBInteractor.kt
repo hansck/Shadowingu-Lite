@@ -45,7 +45,6 @@ class DBInteractor(var listener: QueryListener) {
 				?.observeOn(AndroidSchedulers.mainThread())
 				?.subscribe { lessons ->
 					run {
-						Log.e("LESSONS", lessons.size.toString() + " " + lessons[0].topic)
 						DataManager.instance.addLessons(lessons)
 						listener.onQuerySucceed(QueryEnum.GET_LESSONS)
 					}
@@ -61,7 +60,6 @@ class DBInteractor(var listener: QueryListener) {
 				?.observeOn(AndroidSchedulers.mainThread())
 				?.subscribe { audios ->
 					run {
-						Log.e("AUDIOS", audios.size.toString() + " " + audios[0].furigana)
 						DataManager.instance.addWords(audios)
 						listener.onQuerySucceed(QueryEnum.GET_WORDS)
 					}

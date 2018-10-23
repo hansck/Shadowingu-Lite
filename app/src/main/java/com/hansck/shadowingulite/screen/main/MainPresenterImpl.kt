@@ -19,8 +19,8 @@ class MainPresenterImpl(val view: MainPresenter.MainView) : MainPresenter, Query
 		when (state) {
 			IDLE -> view.showState(IDLE)
 			LOADING -> view.showState(LOADING)
-			LOAD_STAGES -> interactor.getLessons()
-			LOAD_AUDIOS -> interactor.getWords()
+			LOAD_LESSONS -> interactor.getLessons()
+			LOAD_WORDS -> interactor.getWords()
 			LOAD_HOME -> view.showState(LOAD_HOME)
 			SHOW_SCREEN_STATE -> view.showState(SHOW_SCREEN_STATE)
 			ERROR -> view.showState(ERROR)
@@ -57,11 +57,9 @@ class MainPresenterImpl(val view: MainPresenter.MainView) : MainPresenter, Query
 
 	override fun onQuerySucceed(route: QueryEnum) {
 		when (route) {
-			QueryEnum.GET_LESSONS -> presentState(LOAD_AUDIOS)
+			QueryEnum.GET_LESSONS -> presentState(LOAD_WORDS)
 			QueryEnum.GET_WORDS -> presentState(LOAD_HOME)
-			else -> {
-				presentState(LOAD_HOME)
-			}
+			else -> presentState(LOAD_HOME)
 		}
 	}
 

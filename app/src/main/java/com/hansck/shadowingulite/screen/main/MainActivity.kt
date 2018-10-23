@@ -27,7 +27,7 @@ class MainActivity : BaseActivity(), MainPresenter.MainView {
 		setContentView(R.layout.activity_main)
 
 		init()
-		presenter.presentState(LOAD_STAGES)
+		presenter.presentState(LOAD_LESSONS)
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu): Boolean {
