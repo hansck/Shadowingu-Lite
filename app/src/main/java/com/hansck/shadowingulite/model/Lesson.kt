@@ -43,19 +43,19 @@ data class Lesson(
 		fun populateData(): Array<Lesson> {
 			return arrayOf(
 					Lesson(0, "Pronoun", "Beginner", 0, 500,
-							"bg_grey", "bg_purple", "ic_topic_home_disabled", "ic_topic_home", false),
+							"bg_grey", "bg_purple", "ic_topic_home_disabled", "ic_topic_home", true),
 					Lesson(1, "Things at School", "Beginner", 0, 750,
-							"bg_grey", "bg_teal", "ic_topic_school_1_disabled", "ic_topic_school_1", false),
+							"bg_grey", "bg_teal", "ic_topic_school_1_disabled", "ic_topic_school_1", true),
 					Lesson(2, "School Activities", "Beginner", 0, 1000,
-							"bg_grey", "bg_teal", "ic_topic_school_2_disabled", "ic_topic_school_2", false),
+							"bg_grey", "bg_teal", "ic_topic_school_2_disabled", "ic_topic_school_2", true),
 					Lesson(3, "At Canteen", "Beginner", 0, 1250,
-							"bg_grey", "bg_blue", "ic_topic_canteen_1_disabled", "ic_topic_canteen_1", false),
+							"bg_grey", "bg_blue", "ic_topic_canteen_1_disabled", "ic_topic_canteen_1", true),
 					Lesson(4, "At Canteen 2", "Beginner", 0, 1500,
-							"bg_grey", "bg_blue", "ic_topic_canteen_2_disabled", "ic_topic_canteen_2", false),
+							"bg_grey", "bg_blue", "ic_topic_canteen_2_disabled", "ic_topic_canteen_2", true),
 					Lesson(5, "Places", "Lower-Intermediate", 0, 1750,
-							"bg_grey", "bg_purple", "ic_topic_places_disabled", "ic_topic_places", false),
+							"bg_grey", "bg_purple", "ic_topic_places_disabled", "ic_topic_places", true),
 					Lesson(6, "Travelling", "Lower-Intermediate", 0, 2000,
-							"bg_grey", "bg_teal", "ic_topic_travelling_disabled", "ic_topic_travelling", false))
+							"bg_grey", "bg_teal", "ic_topic_travelling_disabled", "ic_topic_travelling", true))
 		}
 	}
 }
